@@ -1,11 +1,8 @@
 using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] int holeSize = 1;
+    [SerializeField] int size = 1;
     [SerializeField] float speed = 8f;
-
-    int score = 0;
-    int growTarget = 5;
 
     void Update()
     {
@@ -20,28 +17,23 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    void OnEatObject(int points)
+    void OnObjectConsume()
     {
-        score += points;
-        if (score >= growTarget)
+        if (ScoreManager.instance.objectsEaten % 2 == 0)
         {
-            growTarget *= 4;
-            holeSize += 5;
-            transform.localScale = transform.localScale * 2f;
-            Camera.main.orthographicSize += 5;
+            size += 2;
+            transform.localScale = transform.localScale + Vector3.one;
         }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        EatableObject eatableObject = other.gameObject.GetComponent<EatableObject>();
-        if (eatableObject != null)
+        BuildingStats building = other.gameObject.GetComponent<BuildingStats>();
+        if (building != null && size >= building.eatSizeThreshold)
         {
-            if (eatableObject.Size <= holeSize)
-            {
-                OnEatObject(eatableObject.Points);
-                Destroy(other.gameObject);
-            }
+            building.GivePlayerScore();
+            OnObjectConsume();
+            Destroy(other.gameObject);
         }
     }
 }

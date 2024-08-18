@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 779515859092787538}
   - component: {fileID: 3801415273591850149}
   - component: {fileID: 8310014695574560175}
+  - component: {fileID: 7461111133842453560}
   m_Layer: 0
   m_Name: Fire Hidrant
   m_TagString: Untagged
@@ -100,3 +101,38 @@ MonoBehaviour:
   eatSizeThreshold: 1
   pointOnEat: 25
   name: Fire Hidrant
+--- !u!70 &7461111133842453560
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6560400366150933900}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0021683061, y: -0.9318112}
+  m_Size: {x: 0.7068775, y: 0.24638894}
+  m_Direction: 1
