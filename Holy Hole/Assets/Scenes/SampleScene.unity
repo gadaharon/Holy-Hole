@@ -224,7 +224,7 @@ Transform:
   m_GameObject: {fileID: 423587370}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.25, z: -10}
+  m_LocalPosition: {x: 5, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -409,7 +409,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.25, z: -10}
+  m_LocalPosition: {x: 5, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -457,6 +457,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1425929377889483230, guid: 4053f8d2f8505a44fbb5bce578e2d90d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2360997983222730974, guid: 4053f8d2f8505a44fbb5bce578e2d90d, type: 3}
       propertyPath: m_Name
       value: Small House (2)
@@ -638,6 +642,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 2 Story building (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4714257419397997183, guid: b339c05671a082545a244b4abb9557c2, type: 3}
+      propertyPath: transparencyAmount
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5208248734280035427, guid: b339c05671a082545a244b4abb9557c2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13
@@ -688,7 +696,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6814055971608627973, guid: b339c05671a082545a244b4abb9557c2, type: 3}
       propertyPath: m_MaskInteraction
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -803,6 +811,14 @@ PrefabInstance:
     - target: {fileID: 6560400366150933900, guid: 2532ab8a3aecc844680680fc2ff0557c, type: 3}
       propertyPath: m_Name
       value: Fire Hidrant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310014695574560175, guid: 2532ab8a3aecc844680680fc2ff0557c, type: 3}
+      propertyPath: fallSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310014695574560175, guid: 2532ab8a3aecc844680680fc2ff0557c, type: 3}
+      propertyPath: rotationSpeed
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1146,11 +1162,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3444495965063364230, guid: b7b3f759b570ba741a6f82a0f4e0abdb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3444495965063364230, guid: b7b3f759b570ba741a6f82a0f4e0abdb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.25
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3444495965063364230, guid: b7b3f759b570ba741a6f82a0f4e0abdb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1188,6 +1204,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 3499820032871538474, guid: b7b3f759b570ba741a6f82a0f4e0abdb, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1201,6 +1221,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1425929377889483230, guid: 4053f8d2f8505a44fbb5bce578e2d90d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2360997983222730974, guid: 4053f8d2f8505a44fbb5bce578e2d90d, type: 3}
       propertyPath: m_Name
       value: Small House
@@ -1310,6 +1334,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4187037364599374850, guid: 6a760b1b8eb2a074eaa5ebcfda49d57a, type: 3}
+      propertyPath: isFalling
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8420026546769838574, guid: 6a760b1b8eb2a074eaa5ebcfda49d57a, type: 3}
       propertyPath: m_Name
       value: Street lamp
@@ -1330,6 +1358,10 @@ PrefabInstance:
     - target: {fileID: 3340973316579324584, guid: b339c05671a082545a244b4abb9557c2, type: 3}
       propertyPath: m_Name
       value: 2 Story building
+      objectReference: {fileID: 0}
+    - target: {fileID: 4714257419397997183, guid: b339c05671a082545a244b4abb9557c2, type: 3}
+      propertyPath: transparencyAmount
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5208248734280035427, guid: b339c05671a082545a244b4abb9557c2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1377,7 +1409,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6814055971608627973, guid: b339c05671a082545a244b4abb9557c2, type: 3}
       propertyPath: m_MaskInteraction
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
