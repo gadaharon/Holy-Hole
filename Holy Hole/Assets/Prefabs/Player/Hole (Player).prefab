@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3499820032871538474}
   - component: {fileID: 2946717223271851559}
   - component: {fileID: 8959166394663926065}
-  - component: {fileID: 5429203133843125742}
+  - component: {fileID: 2796172931974578502}
   m_Layer: 0
   m_Name: Hole (Player)
   m_TagString: Player
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 368821c44e336d64495b611b46718305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  holeSize: 1
+  size: 1
   speed: 8
 --- !u!50 &8959166394663926065
 Rigidbody2D:
@@ -128,8 +128,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!70 &5429203133843125742
-CapsuleCollider2D:
+--- !u!58 &2796172931974578502
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -160,6 +160,6 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.003701561, y: -0.12040431}
-  m_Size: {x: 0.8000871, y: 0.6111103}
-  m_Direction: 1
+  m_Offset: {x: 0, y: -0.2}
+  serializedVersion: 2
+  m_Radius: 0.15

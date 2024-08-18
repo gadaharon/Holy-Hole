@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-public class PlayerController : MonoBehaviour
+public class PlayerController : SingletonMonoBehaviour<PlayerController>
 {
     public static Action<int> OnHoleSizeChange;
 
@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
         if (ScoreManager.Instance.objectsEaten % 2 == 0)
         {
             size += 2;
-            transform.localScale = transform.localScale + Vector3.one;
+            transform.localScale = transform.localScale + (Vector3.one / 2);
         }
         if (size >= lastSizeCheck + sizeToZoomThreshold)
         {
@@ -42,9 +42,9 @@ public class PlayerController : MonoBehaviour
         BuildingStats building = other.gameObject.GetComponent<BuildingStats>();
         if (building != null && size >= building.eatSizeThreshold)
         {
+            building.Fall();
             building.GivePlayerScore();
             OnObjectConsume();
-            Destroy(other.gameObject);
         }
     }
 }
