@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 779515859092787538}
   - component: {fileID: 3801415273591850149}
   - component: {fileID: 8310014695574560175}
-  - component: {fileID: 7461111133842453560}
+  - component: {fileID: 8681002603670254864}
   m_Layer: 0
   m_Name: Fire Hidrant
   m_TagString: Untagged
@@ -101,8 +101,8 @@ MonoBehaviour:
   eatSizeThreshold: 1
   pointOnEat: 25
   name: Fire Hidrant
---- !u!70 &7461111133842453560
-CapsuleCollider2D:
+--- !u!61 &8681002603670254864
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -130,9 +130,19 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0021683061, y: -0.9318112}
-  m_Size: {x: 0.7068775, y: 0.24638894}
-  m_Direction: 1
+  m_Offset: {x: -0.01762116, y: -0.92217374}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.3299999, y: 2.11}
+    newSize: {x: 1.3299999, y: 2.11}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.785702, y: 0.26565218}
+  m_EdgeRadius: 0

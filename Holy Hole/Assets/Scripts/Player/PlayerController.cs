@@ -1,8 +1,14 @@
+using System;
 using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
+    public static Action<int> OnHoleSizeChange;
+
     [SerializeField] int size = 1;
     [SerializeField] float speed = 8f;
+
+    int sizeToZoomThreshold = 4;
+    int lastSizeCheck = 0;
 
     void Update()
     {
@@ -19,10 +25,15 @@ public class PlayerController : MonoBehaviour
 
     void OnObjectConsume()
     {
-        if (ScoreManager.instance.objectsEaten % 2 == 0)
+        if (ScoreManager.Instance.objectsEaten % 2 == 0)
         {
             size += 2;
             transform.localScale = transform.localScale + Vector3.one;
+        }
+        if (size >= lastSizeCheck + sizeToZoomThreshold)
+        {
+            lastSizeCheck = size;
+            OnHoleSizeChange?.Invoke(2);
         }
     }
 
