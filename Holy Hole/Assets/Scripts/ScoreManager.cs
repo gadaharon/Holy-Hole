@@ -1,19 +1,7 @@
 using UnityEngine;
 
-public class ScoreManager : MonoBehaviour
+public class ScoreManager : SingletonMonoBehaviour<ScoreManager>
 {
-
-    #region Singleton
-    public static ScoreManager instance;
-
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-    }
-    #endregion
 
     public float score = 0;
     public int objectsEaten = 0;
