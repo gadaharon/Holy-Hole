@@ -47,7 +47,7 @@ public class PlayerController : SingletonMonoBehaviour<PlayerController>
         if (currentGrowthGauge >= targetGrowthGauge)
         {
             currentGrowthGauge = 0;
-            size += 2;
+            size++;
             transform.localScale = transform.localScale + (Vector3.one * holeSizeMultiplier);
             targetGrowthGauge = Mathf.CeilToInt(baseGrowthGauge * Mathf.Pow(gaugeGrowthRate, size));
             OnHoleSizeChange?.Invoke(cameraZoomOutAmount);
