@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class BuildingStats : MonoBehaviour
 {
+    public bool HasFallen => hasFallen;
+
     public float eatSizeThreshold;
     public int pointOnEat;
     public new string name;
@@ -10,24 +12,23 @@ public class BuildingStats : MonoBehaviour
     float fallSpeed = 5f;
     float rotationSpeed = 70f;
 
-    bool isFalling = false;
+    bool hasFallen = false;
 
     public void GivePlayerScore()
     {
-        ScoreManager.Instance.AddScore(pointOnEat);
+        if (!hasFallen)
+        {
+            ScoreManager.Instance.AddScore(pointOnEat);
+            hasFallen = true;
+        }
     }
 
     void Update()
     {
-        if (isFalling)
+        if (hasFallen)
         {
             HandleFall();
         }
-    }
-
-    public void Fall()
-    {
-        isFalling = true;
     }
 
     void HandleFall()

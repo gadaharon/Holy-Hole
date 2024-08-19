@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3ac3ca5c9d22b84db147025c1342986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eatSizeThreshold: 5
+  eatSizeThreshold: 8
   pointOnEat: 250
   name: Super Market
 --- !u!61 &7367719455137727980
