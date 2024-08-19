@@ -12,7 +12,7 @@ public class SmoothCameraZoom : MonoBehaviour
     float smoothTime = 0.5f;
 
     float minZoom = 5;
-    float maxZoom = 20;
+    float maxZoom = 50;
 
     void OnEnable()
     {
