@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1178716220355667068}
   - component: {fileID: 1485414070187060309}
   m_Layer: 0
-  m_Name: SeaWeed
+  m_Name: Grass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
