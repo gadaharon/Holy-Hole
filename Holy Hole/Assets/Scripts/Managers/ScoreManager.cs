@@ -23,7 +23,6 @@ public class ScoreManager : SingletonMonoBehaviour<ScoreManager>
         int topScore = LoadTopScore();
         if (score > topScore)
         {
-            Debug.Log("SAVED TOP SCORE");
             PlayerPrefs.SetInt("topScore", score);
             PlayerPrefs.Save();
         }

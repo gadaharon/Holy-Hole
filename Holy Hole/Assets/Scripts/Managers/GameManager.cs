@@ -55,7 +55,6 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     public void QuitGame()
     {
-        Debug.Log("QUIT GAME");
         Application.Quit();
     }
 
