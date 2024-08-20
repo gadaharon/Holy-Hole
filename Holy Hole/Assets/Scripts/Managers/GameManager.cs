@@ -90,6 +90,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager> {
         Time.timeScale = 0;
         UIManager.Instance.ToggleGameOverMenu(true);
         UIManager.Instance.SetTotalScoreInMenu();
+        ScoreManager.Instance.SaveTopScore();
     }
 
     public void StartSpecificLevel(string sceneName) {
