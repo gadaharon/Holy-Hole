@@ -5337,17 +5337,6 @@ Transform:
   - {fileID: 590444397}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2043951487 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8959165426212248036, guid: c4260858cb92e0646a4d8b76f091d84f, type: 3}
-  m_PrefabInstance: {fileID: 997145136098132758}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4abc3919553c834cac2a250d17e8c8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2084772642
 GameObject:
   m_ObjectHideFlags: 0
@@ -5564,10 +5553,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Settings Panel
       objectReference: {fileID: 0}
-    - target: {fileID: 2441672888956162495, guid: c4260858cb92e0646a4d8b76f091d84f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4868768445034799078, guid: c4260858cb92e0646a4d8b76f091d84f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -5691,11 +5676,7 @@ PrefabInstance:
     - target: {fileID: 9137144841520668207, guid: c4260858cb92e0646a4d8b76f091d84f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2043951487}
-    - target: {fileID: 9137144841520668207, guid: c4260858cb92e0646a4d8b76f091d84f, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ToggleSettingPanel
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1327661237}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5794,21 +5775,9 @@ PrefabInstance:
       value: Settings
       objectReference: {fileID: 0}
     - target: {fileID: 8552648581596384183, guid: d65ac413f6562c045bb67a01a1c3eb09, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8552648581596384183, guid: d65ac413f6562c045bb67a01a1c3eb09, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2043951487}
-    - target: {fileID: 8552648581596384183, guid: d65ac413f6562c045bb67a01a1c3eb09, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ToggleSettingPanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 8552648581596384183, guid: d65ac413f6562c045bb67a01a1c3eb09, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SettingsPanel, Assembly-CSharp
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1327661237}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
